@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="Description" content="Objects"> 
+    <title>Objects This method</title> 
+        <script> 
+            let user = { 
+            userId: "001", 
+             firstName:"John", 
+              lastName:"jack", 
+               password:"12345", 
+            country:"India", 
+             continent:"Asia", 
+             age:25, 
+             accountCreated:true, 
+               displayAge(){ 
+                alert(this.age); 
+            } 
+             displayAccountCreated(){ 
+                alert(this.accountCreated); 
+            } 
+        }; 
+        console.log(user); 
+            user.displayAge=displayAge; 
+            user.displayAge(); 
+            user.displayAccountCreated=displayAccountCreated; 
+            user.displayAccountCreated(); 
+            
+
+        </script> 
+</head> 
+<body> 
+    <h2>Objects This method</h2> 
+</body> 
+</html>
